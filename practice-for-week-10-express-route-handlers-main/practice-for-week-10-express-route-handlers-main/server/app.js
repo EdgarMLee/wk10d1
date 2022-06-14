@@ -53,6 +53,9 @@ app.put('/artists/:artistId', (req, res) => {
   res.json(editArtistByArtistId(req.params.artistId, req.body));
 })
 
+app.patch('/artists/:artistId', (req, res) => {
+  res.json(editArtistByArtistId(req.params.artistId, req.body));
+});
 // deleteArtistByArtistId,
 
 
