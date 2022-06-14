@@ -67,9 +67,13 @@ app.get('/artists/latest/albums', (req, res) => {
   res.json(getAlbumsForLatestArtist());
 })
 // getAlbumsByArtistId,
-app.get('/')
+app.get('/artists/:artistId/albums', (req, res) => {
+  res.json(getAlbumByAlbumId(res.params.artistId));
+});
 // getAlbumByAlbumId,
-
+app.get('/albums/:albumId', (req, res) => {
+  res.json(getAlbumByAlbumId(req.params.albumId));
+})
 // addAlbumByArtistId,
 
 // editAlbumByAlbumId,
