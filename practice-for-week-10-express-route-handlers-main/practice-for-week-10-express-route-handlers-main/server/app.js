@@ -35,7 +35,9 @@ app.get('/artists', (req, res) => {
 });
 
 // getLatestArtist,
-
+app.get('/artists/latest', (req, res) => {
+  res.json(getLatestArtist());
+})
 // getArtistByArtistId,
 
 // addArtist,
