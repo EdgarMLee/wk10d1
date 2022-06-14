@@ -57,12 +57,17 @@ app.patch('/artists/:artistId', (req, res) => {
   res.json(editArtistByArtistId(req.params.artistId, req.body));
 });
 // deleteArtistByArtistId,
-
+app.delete('/artists/:artistId', (req, res) => {
+  deleteArtistByArtistId(req.params.artistId);
+  res.json({ message: 'Successfully deleted'});
+})
 
 // getAlbumsForLatestArtist,
-
+app.get('/artists/latest/albums', (req, res) => {
+  res.json(getAlbumsForLatestArtist());
+})
 // getAlbumsByArtistId,
-
+app.get('/')
 // getAlbumByAlbumId,
 
 // addAlbumByArtistId,
