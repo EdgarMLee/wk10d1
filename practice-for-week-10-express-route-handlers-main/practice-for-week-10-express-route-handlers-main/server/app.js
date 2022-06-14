@@ -40,7 +40,7 @@ app.get('/artists/latest', (req, res) => {
 })
 // getArtistByArtistId,
 app.get('/artists/:artistId', (req, res) => {
-  res.json(getArtistByArtistId());
+  res.json(getArtistByArtistId(req.params.artistId));
 })
 // addArtist,
 
