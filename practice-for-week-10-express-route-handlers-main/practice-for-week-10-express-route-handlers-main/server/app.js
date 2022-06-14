@@ -30,9 +30,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('./artists', (req, res) => {
+app.get('/artists', (req, res) => {
   res.json(getAllArtists());
-})
+});
 
 const port = 5000;
 app.listen(port, () => console.log('Server is listening on port', port));
