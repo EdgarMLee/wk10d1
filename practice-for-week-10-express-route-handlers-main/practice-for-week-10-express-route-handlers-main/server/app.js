@@ -75,7 +75,10 @@ app.get('/albums/:albumId', (req, res) => {
   res.json(getAlbumByAlbumId(req.params.albumId));
 })
 // addAlbumByArtistId,
-
+app.post('/artists/:artistId/albums', (req, res) => {
+  res.status(201);
+  res.json(addAlbumByArtistId(req.params.artistId, req.body));
+}
 // editAlbumByAlbumId,
 
 // deleteAlbumByAlbumId,
