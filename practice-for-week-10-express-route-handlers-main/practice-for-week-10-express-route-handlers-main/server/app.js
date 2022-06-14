@@ -34,5 +34,41 @@ app.get('/artists', (req, res) => {
   res.json(getAllArtists());
 });
 
+// getLatestArtist,
+
+// getArtistByArtistId,
+
+// addArtist,
+
+// editArtistByArtistId,
+
+// deleteArtistByArtistId,
+
+// getAlbumsForLatestArtist,
+
+// getAlbumsByArtistId,
+
+// getAlbumByAlbumId,
+
+// addAlbumByArtistId,
+
+// editAlbumByAlbumId,
+
+// deleteAlbumByAlbumId,
+
+// getFilteredAlbums,
+
+// getSongsByArtistId,
+
+// getSongsByAlbumId,
+
+// getSongBySongId,
+
+// addSongByAlbumId,
+
+// editSongBySongId,
+
+// deleteSongBySongId
+
 const port = 5000;
 app.listen(port, () => console.log('Server is listening on port', port));
