@@ -49,6 +49,9 @@ app.post('/artists', (req, res) => {
 })
 
 // editArtistByArtistId,
+app.put('/artists/:artistId', (req, res) => {
+  res.json(editArtistByArtistId(req.params.artistId, req.body));
+})
 
 // deleteArtistByArtistId,
 
