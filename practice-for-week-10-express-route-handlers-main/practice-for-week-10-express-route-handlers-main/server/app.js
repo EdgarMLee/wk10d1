@@ -43,6 +43,10 @@ app.get('/artists/:artistId', (req, res) => {
   res.json(getArtistByArtistId(req.params.artistId));
 })
 // addArtist,
+app.post('/artists', (req, res) => {
+  res.status(201);
+  res.json(addArtist(req.body));
+})
 
 // editArtistByArtistId,
 
